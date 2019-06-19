@@ -1,0 +1,23 @@
+{
+  "name": "node-red-contrib-mpu9250",
+  "version": "1.0.0",
+  "description": "Provide support of mpu9250",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "sensor_mpu9250": "node.js"
+    }
+  },
+  "author": "Benoit Lavorata",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/benoit.lavorata/node-red-contrib-mpu9250.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "mpu9250": "^0.2.1"
+  }
+}
