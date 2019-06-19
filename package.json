@@ -1,7 +1,7 @@
 {
-  "name": "node-red-contrib-mpu9250",
+  "name": "node-red-contrib-motion-gy91",
   "version": "1.0.1",
-  "description": "Provide support of mpu9250",
+  "description": "Provide support of GY-91 (MPU-9250 + BMP280)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,7 @@
   "author": "Benoit Lavorata",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/benoit.lavorata/node-red-contrib-mpu9250.git"
+    "url": "git+https://gitlab.com/benoit.lavorata/node-red-contrib-motion-gy91.git"
   },
   "license": "ISC",
   "dependencies": {

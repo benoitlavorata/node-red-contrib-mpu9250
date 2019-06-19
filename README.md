@@ -1,7 +1,7 @@
-# node-red-contrib-mpu9250
+# node-red-contrib-motion-gy91
 Support for GY-91 (MPU-9250 + BMP280), which provides Acceleration, Gyrometer, Magnetometer, Temperature readings.
 
-# Installation
+# Pre-installation
 Only tested it on raspberry pi W and raspberry pi 3.
 I did not dig too much into the dependencies, but I did this to make it work (also works in docker, but you need to share the device and use priviledged mode).
 
@@ -32,6 +32,10 @@ You can use the test.js script in the repo to see if everything works well.
 ```js
 node test.js
 ```
+
+# Installation
+```
+npm install --save 
 
 # Usage
 You will see a node called mpu9250 in node-red, drag drop, and you are good to go.
