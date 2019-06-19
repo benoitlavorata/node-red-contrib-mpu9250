@@ -1,4 +1,4 @@
-# node-red-contrib-motion-gy91
+# node-red-contrib-mpu9250
 Support for GY-91 (MPU-9250 + BMP280), which provides Acceleration, Gyrometer, Magnetometer, Temperature readings.
 
 # Pre-installation
