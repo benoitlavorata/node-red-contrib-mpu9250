@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-motion-gy91",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provide support of GY-91 (MPU-9250 + BMP280)",
   "main": "index.js",
   "scripts": {
