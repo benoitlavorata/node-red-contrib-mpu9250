@@ -11,20 +11,20 @@ module.exports = function (RED) {
         node.error(err.message);
     };
 
-    function MyNode(config) {
+    function MPUSensorNode(config) {
         const node = this;
         RED.nodes.createNode(node, config);
 
         const Wrapper_MPU9250 = require('./Wrapper_MPU9250.js');
 
-        node.on('input', function (msg) {
+        node.on('input', function (msg, send, done) {
 
             msg['_original'] = msg.payload;
             if(!node.mpu){
                 node.status({
                     fill: "blue",
                     shape: "dot",
-                    text: `Instanciate MPU9250...`
+                    text: `Instantiate MPU9250...`
                 });
 
                 msg.payload.notifyCb = (res) => {
@@ -47,7 +47,7 @@ module.exports = function (RED) {
                 node.status({
                     fill: "green",
                     shape: "dot",
-                    text: `Success !`
+                    text: `Success!`
                 });
                 msg.payload = data;
                 node.send(msg);
@@ -60,5 +60,5 @@ module.exports = function (RED) {
         });
     }
 
-    RED.nodes.registerType("sensor_mpu9250", MyNode);
+    RED.nodes.registerType("sensor_mpu9250", MPUSensorNode);
 };

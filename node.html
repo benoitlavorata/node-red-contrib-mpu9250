@@ -24,5 +24,14 @@
 </script>
 
 <script type="text/x-red" data-help-name="sensor_mpu9250">
-
+    <p>Reads data from a the IMU sensor MPU-9250.</p>
+    <p>Data by default is streamed a 1s intervals.</p>
+    <p style="font-weight:bold">Example payloads to inject:</p>
+    <li>Stream at 2s intervals:<br/>
+      <code>{<br/>&nbsp;&nbsp;"method": "getAll",<br/>&nbsp;&nbsp;"stream": true,<br/>&nbsp;&nbsp;"streamIntervalMs": 2000<br/>}</code>
+    </li>
+ 
+    <li>Stop streaming:<br/>
+      <code>{<br/>&nbsp;&nbsp;"method": "getAll",<br/>&nbsp;&nbsp;"stream": false,<br/>}</code>
+    </li>
 </script>

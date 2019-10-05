@@ -188,7 +188,7 @@ class Wrapper_MPU9250 {
 
     log(msg,level=4){
         const s = this;
-        if(s.debugLevel){
+        if(s.DEBUG && s.debugLevel){
             if(level <= s.debugLevel){
                 console.log(msg);
             }
