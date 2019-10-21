@@ -15,6 +15,9 @@
     }
   },
   "author": "Benoit Lavorata",
+  "contributors": [
+    "Brandon Kenna <brandon@hypersight.com.au>"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/benoit.lavorata/node-red-contrib-mpu9250.git"
